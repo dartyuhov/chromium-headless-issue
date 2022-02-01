@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1643709204423' stop='1643709205029'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1643709204424' status='broken' stop='1643709205027'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4852.0'/>
+            </parameters>
+            <steps>
+                <step start='1643709204426' status='broken' stop='1643709205027'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='2e228bed-d1fe-47f8-8077-90445ea60a3f-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps>
+                        <step start='1643709205019' status='broken' stop='1643709205027'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps>
+                                <step start='1643709205022' status='broken' stop='1643709205027'>
+                                    <name>DELETE /session/:sessionId</name>
+                                    <title>DELETE /session/:sessionId</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>socket hang up</message>
+                <stack-trace>RequestError: socket hang up
+                    at ClientRequest.&lt;anonymous> (/Users/darst/js/wdio/node_modules/got/dist/source/core/index.js:962:111)
+                    at Object.onceWrapper (events.js:422:26)
+                    at ClientRequest.emit (events.js:327:22)
+                    at ClientRequest.EventEmitter.emit (domain.js:467:12)
+                    at ClientRequest.origin.emit (/Users/darst/js/wdio/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketOnEnd (_http_client.js:493:9)
+                    at Socket.emit (events.js:327:22)
+                    at Socket.EventEmitter.emit (domain.js:467:12)
+                    at endReadableNT (internal/streams/readable.js:1327:12)
+                    at connResetException (internal/errors.js:607:14)
+                    at Socket.socketOnEnd (_http_client.js:493:23)
+                    at Socket.emit (events.js:327:22)
+                    at Socket.EventEmitter.emit (domain.js:467:12)
+                    at endReadableNT (internal/streams/readable.js:1327:12)
+                    at processTicksAndRejections (internal/process/task_queues.js:80:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

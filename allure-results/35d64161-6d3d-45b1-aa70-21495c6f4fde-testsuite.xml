@@ -1,0 +1,132 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1643709312827' stop='1643709319551'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1643709312827' status='broken' stop='1643709319551'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4852.0'/>
+            </parameters>
+            <steps>
+                <step start='1643709312830' status='passed' stop='1643709314713'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5f4407da-20b7-4ddd-a516-7e78611a1ef9-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314714' status='passed' stop='1643709314727'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ae1f7277-b356-429f-a2b1-a5cc2d728f06-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='17f8e277-b127-48ed-bdc8-ef12eff90fd7-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314731' status='passed' stop='1643709314759'>
+                    <name>POST /session/:sessionId/element/3e9bff50-2617-48eb-9ae6-b100ad6bc216/clear</name>
+                    <title>POST /session/:sessionId/element/3e9bff50-2617-48eb-9ae6-b100ad6bc216/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1643709314762' status='passed' stop='1643709314838'>
+                    <name>POST /session/:sessionId/element/3e9bff50-2617-48eb-9ae6-b100ad6bc216/value</name>
+                    <title>POST /session/:sessionId/element/3e9bff50-2617-48eb-9ae6-b100ad6bc216/value</title>
+                    <attachments>
+                        <attachment title='Request' source='04537de7-ecc9-4a21-8e06-fb48c951723a-attachment.json' type='application/json' size='24'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314839' status='passed' stop='1643709314848'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f1e055e3-8937-44cf-9052-ec77854880c6-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='629a5fb1-7bc3-436e-afea-f2dcde784907-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314851' status='passed' stop='1643709314878'>
+                    <name>POST /session/:sessionId/element/ebee0954-bdb6-41ac-a134-09d928f806db/clear</name>
+                    <title>POST /session/:sessionId/element/ebee0954-bdb6-41ac-a134-09d928f806db/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1643709314879' status='passed' stop='1643709314918'>
+                    <name>POST /session/:sessionId/element/ebee0954-bdb6-41ac-a134-09d928f806db/value</name>
+                    <title>POST /session/:sessionId/element/ebee0954-bdb6-41ac-a134-09d928f806db/value</title>
+                    <attachments>
+                        <attachment title='Request' source='7d9626e9-e413-4a9a-882d-6f6b02f3ef51-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314918' status='passed' stop='1643709314928'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ff45bebf-1c8a-4f43-acc9-ca36257cb715-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='197149c8-8dc0-4970-89c1-c9b752c321e2-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1643709314930' status='broken' stop='1643709319550'>
+                    <name>POST /session/:sessionId/element/e5f2aeb8-7027-4463-a17b-45f16aae34a8/click</name>
+                    <title>POST /session/:sessionId/element/e5f2aeb8-7027-4463-a17b-45f16aae34a8/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1643709319219' status='passed' stop='1643709319550'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='15a58814-5bb1-4f8e-9a04-da0ab1e26e87-attachment.png' type='image/png' size='160237'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button class="radius" type="submit">...&lt;/button> is not clickable at point (95, 305). Other element would receive the click: &lt;div class="row">...&lt;/div>
+                  (Session info: headless chrome=100.0.4852.0)</message>
+                <stack-trace>0   chromedriver                        0x0000000101b2fd19 chromedriver + 5369113
+                1   chromedriver                        0x0000000101ac69f3 chromedriver + 4938227
+                2   chromedriver                        0x000000010163b3e3 chromedriver + 173027
+                3   chromedriver                        0x0000000101676cd9 chromedriver + 416985
+                4   chromedriver                        0x000000010167495c chromedriver + 407900
+                5   chromedriver                        0x000000010167208e chromedriver + 397454
+                6   chromedriver                        0x0000000101670ff5 chromedriver + 393205
+                7   chromedriver                        0x00000001016659ca chromedriver + 346570
+                8   chromedriver                        0x000000010168d7f2 chromedriver + 509938
+                9   chromedriver                        0x0000000101665286 chromedriver + 344710
+                10  chromedriver                        0x000000010168da1e chromedriver + 510494
+                11  chromedriver                        0x00000001016a144c chromedriver + 590924
+                12  chromedriver                        0x000000010168d6e3 chromedriver + 509667
+                13  chromedriver                        0x0000000101663c81 chromedriver + 339073
+                14  chromedriver                        0x0000000101664d65 chromedriver + 343397
+                15  chromedriver                        0x0000000101af6230 chromedriver + 5132848
+                16  chromedriver                        0x0000000101b08a1c chromedriver + 5208604
+                17  chromedriver                        0x0000000101b08799 chromedriver + 5207961
+                18  chromedriver                        0x0000000101b08ed2 chromedriver + 5209810
+                19  chromedriver                        0x0000000101b0c6f0 chromedriver + 5224176
+                20  chromedriver                        0x0000000101b0913e chromedriver + 5210430
+                21  chromedriver                        0x0000000101aea08d chromedriver + 5083277
+                22  chromedriver                        0x0000000101b20908 chromedriver + 5306632
+                23  chromedriver                        0x0000000101b20a98 chromedriver + 5307032
+                24  chromedriver                        0x0000000101b37465 chromedriver + 5399653
+                25  libsystem_pthread.dylib             0x00007ff8019df4f4 _pthread_start + 125
+                26  libsystem_pthread.dylib             0x00007ff8019db00f thread_start + 15
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
